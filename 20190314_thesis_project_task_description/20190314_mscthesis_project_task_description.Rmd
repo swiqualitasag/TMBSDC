@@ -1,0 +1,37 @@
+---
+title: |
+  | Genetic Analysis Of Twin And Multiple Births 
+  | In Swiss Dairy Cattle
+output:
+  bookdown::pdf_document2:
+    toc: false
+    number_section: false
+bibliography: [bibliography.bib] 
+biblio-style: "apalike"   
+citation_package: natbib
+link-citations: yes
+---
+
+```{r, include=FALSE}
+mrmt <- rmddochelper::MendeleyExportToolR6$new()
+mrmt$set_this_rmd_file(ps_this_rmd_file = ifelse(rstudioapi::isAvailable(),
+                                                 rstudioapi::getSourceEditorContext(),
+                                                 rprojroot::thisfile()))
+```
+
+In Dairy Cattle breeding events of twin and multiple births are considered to be negative. According to `r mrmt$add("Johanson2010")` twin and multiple births can have many negative effects such as decreased production including dystocia, retained placenta, longer rebreeding intervals, higher mortality rates and increased frequencies of freemartins. These negative effects can lead to AI companies refusing to buy bulls with twin or multiple births occurring in their ancestral history. 
+
+Due to these negative effects, one would assume that selection would be preferentially against twin and multiple births. But the frequency of twin and multiple births does not decrease. Several studies have reported more or less constant rates of twin and multiple births over a longer period of time.  There is a list of references on page 15 of `r mrmt$add("Atteneder2007")`. The same reference gives a very detailed overview of the phenomenon of twin and multiple births in Austria. To the best of our knowledge, there is no recent study on the topic of twin and multiple births in the Swiss dairy cattle populations.
+
+The goal of this project is the analysis of twin and multiple births in Swiss dairy populations like `Braunvieh`, `Original Braunvieh`, `Simmental`, `Swiss Fleckvieh` and `Holstein`. The project focuses on the frequency of twin and multiple births using descriptive statistics. Influential factors on the phenotypes are determined using variance components estimation. The data to be analysed is provided by the Swiss dairy cattle breeding organisations via Qualitas AG. Most statistical analyses are done using the statistical computing system R. Variance components are estimated using specialized software packages such as VCE. 
+
+Milestones of this project consist of
+
+* Thorough literature review of twin and multiple births in dairy cattle and their effect on productivity
+* Descriptive statistical analysis of the rate of twin and multiple births in Swiss dairy cattle populations
+* Determining influential factors on twin and multiple births in Swiss dairy cattle populations
+
+Depending on the results of the variance components estimation, further genetic analyses such as traditional and genomic breeding value predictions and genome wide association studies can be conducted.
+
+
+# Bibliography
