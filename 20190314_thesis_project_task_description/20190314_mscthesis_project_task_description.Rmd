@@ -19,21 +19,21 @@ mrmt$set_this_rmd_file(ps_this_rmd_file = ifelse(rstudioapi::isAvailable(),
                                                  rprojroot::thisfile()))
 ```
 
-In Dairy Cattle breeding events of twin and multiple births are considered to be negative. According to `r mrmt$add("Johanson2010")` twin and multiple births can have many negative effects such as decreased production including dystocia, retained placenta, longer rebreeding intervals, higher mortality rates and increased frequencies of freemartins. These negative effects can lead to AI companies refusing to buy bulls with twin or multiple births occurring in their ancestral history. 
+In Dairy Cattle breeding, events of twin and multiple births are considered to be negative. According to `r mrmt$add("Johanson2010")` twin and multiple births can have many negative effects such as decreased production including dystocia, retained placenta, longer rebreeding intervals, higher mortality rates and increased frequencies of freemartins. These negative effects can lead to AI companies refusing to buy bulls with twin or multiple births occurring in their ancestral history. 
 
-Due to these negative effects, one would assume that selection would be preferentially against twin and multiple births. But the frequency of twin and multiple births does not decrease. Several studies have reported more or less constant rates of twin and multiple births over a longer period of time.  There is a list of references on page 15 of `r mrmt$add("Atteneder2007")`. The same reference gives a very detailed overview of the phenomenon of twin and multiple births in Austria. To the best of our knowledge, there is no recent study on the topic of twin and multiple births in the Swiss dairy cattle populations.
+Due to these negative effects, one would assume that selection would be preferentially against twin and multiple births. But the frequency of twin and multiple births does not decrease. Several studies have reported more or less constant rates of twin and multiple births over a longer period of time.  There is a list of references with their reported rates of twin and multiple births on page 15 of `r mrmt$add("Atteneder2007")`. The same reference gives a very detailed overview of the phenomenon of twin and multiple births in Austria. To the best of our knowledge, there is no recent study on the topic of twin and multiple births in the Swiss dairy cattle populations.
 
-The goal of this project is the analysis of twin and multiple births in Swiss dairy populations like `Braunvieh` and `Original Braunvieh`. Furthermore, a comparative analysis with a dataset from the beef cattle `Limousin` is conducted. The project focuses on the frequency of twin and multiple births using descriptive statistics. Influential factors on the phenotypes are determined using variance components estimation. The data to be analysed is provided by the Swiss dairy cattle breeding associations via Qualitas AG. Most statistical analyses are done using the statistical computing system R. Variance components are estimated using specialized software packages such as VCE. 
+The goal of this project is the analysis of twin and multiple births in Swiss dairy populations like `Braunvieh` and `Original Braunvieh`. Furthermore, a comparative analysis with a dataset from the beef cattle breed `Limousin` is conducted. The project focuses on the frequency of twin and multiple births using descriptive statistics. Influential factors on the phenotypes are determined using variance components estimation. The data to be analysed is provided by the Swiss dairy cattle breeding associations via Qualitas AG. Most statistical analyses are done using the statistical computing system R `r mrmt$add("RCoreTeam2017")`. Variance components are estimated using specialized software packages such as VCE  `r mrmt$add("Groeneveld2010a")` 
 
 Milestones of this project consist of
 
-1 Thorough literature review of twin and multiple births in dairy cattle and their effect on productivity
-2 Descriptive statistical analysis of the rate of twin and multiple births in Swiss dairy cattle populations
-3 Estimation of variance components
-4 Prediction of traditional and genomic breeding values
-5 Genome Wide Association Study (GWAS) in order to find putative causal variants or candidate genes
+1. Thorough literature review of twin and multiple births in dairy cattle and their effect on productivity
+2. Descriptive statistical analysis of the rate of twin and multiple births in Swiss dairy cattle populations
+3. Estimation of variance components
+4. Prediction of traditional and genomic breeding values
+5. Genome Wide Association Study (GWAS) in order to find putative causal variants or candidate genes
  
-Milestones 4 and 5 are dependent on the results of milestone 3. 
+Milestones 4 and 5 are dependent on the results of milestone 3. But based on the available literature this dependency is not expected to have any negative effects on the project as a whole.
 
 
 # Bibliography
